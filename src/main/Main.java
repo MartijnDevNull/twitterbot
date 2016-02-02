@@ -57,7 +57,7 @@ public class Main {
 								Starbuck starbuck = sb.getStarbucks(ns.getStation(location[0]).getLat(),
 										ns.getStation(location[0]).getLon());
 								if (!db.doesIdExist(stor.getId())) {
-									String tweetstring = stor.getTraject() + ". Dichtstbijzijnde #starbucks bij "
+									String tweetstring = stor.getTraject() + " Dichtstbijzijnde #starbucks bij "
 											+ starbuck.getNaam() + " " + starbuck.getGoogleMapsLink();
 									System.out.println(tweetstring);
 									tweet.postTweet(tweetstring);
